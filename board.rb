@@ -18,8 +18,8 @@ def move_piece(start, end_pos)
     # make such move
     # start_piece = self(start)
     # end_piece = self(end_pos)
-    self(end_pos), self(start) = start_piece, end_piece
-    start_piece.pos, end_piece.pos = end_pos, start_piece
+    # self(end_pos), self(start) = start_piece, end_piece
+    # start_piece.pos, end_piece.pos = end_pos, start_piece
 end
 
 def in_bounds?(pos)
