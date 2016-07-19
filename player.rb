@@ -26,11 +26,13 @@ class HumanPlayer < Player
   end
 
   def get_start
-    start_move = @display.get_input
+    start_move = nil
     until !start_move.nil?
+      @display.render
       start_move = @display.get_input
     end
     until valid_start?(start_move)
+      @display.render
       print "Invalid piece to move. Select a new piece."
       start_move = @display.get_input
     end
@@ -38,11 +40,13 @@ class HumanPlayer < Player
   end
 
   def get_end
-    end_move = @display.get_input
+    end_move = nil
     until !end_move.nil?
+      @display.render
       end_move = @display.get_input
     end
     until valid_end?(end_move)
+      @display.render
       print "Invalid move. Enter new move."
       end_move = @display.get_input
     end
@@ -80,5 +84,10 @@ class ComputerPlayer < Player
   end
 end
 end
+
 p = HumanPlayer.new(:black)
-p.make_move
+p.display.board.create_board
+while true
+  # p.display.render
+  p.make_move
+end

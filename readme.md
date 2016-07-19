@@ -1,5 +1,5 @@
-Terminal Chess
+# Terminal Chess
 
 
 
-![Alt text](./chesspic.tiff?raw=true "screenshot")
+[Screenshot](https://github.com/wcarver/chess/master/chesspic.tiff)

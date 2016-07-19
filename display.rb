@@ -42,8 +42,7 @@ class Display
   end
 end
 
-
-#DRIVER CODE:
-d = Display.new
-d.board.create_board
-d.render
+#
+# #DRIVER CODE:
+# d = Display.new
+# d.render
